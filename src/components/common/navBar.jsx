@@ -54,11 +54,11 @@ const NavBar = (props) => {
 							>
 								<Link to="/projects">Projetos</Link>
 							</li>
-							
+
 							<li
 								className={`font-bold text-[90%] ${active === "contact" ? "text-accent" : "text-primary dark:text-[#f4f4f5] hover:text-accent transition-colors duration-300"}`}
 							>
-								<Link to="/contact">Contatos</Link>
+								<Link to="/contact">Contato</Link>
 							</li>
 						</ul>
 						<div

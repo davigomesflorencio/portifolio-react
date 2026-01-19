@@ -4,6 +4,7 @@ const INFO = {
 		name: "Davi Gomes Florencio",
 		email: "davigomesflorencio@gmail.com",
 		logo: "../logo.png",
+		cv: "/cv-davigomesflorencio.pdf",
 	},
 
 	socials: {
@@ -190,6 +191,20 @@ const INFO = {
 		{
 			title: "JavaScript",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+		},
+	],
+	academic: [
+		{
+			institution: "UFC Campus Quixadá",
+			title: "Graduação em Ciência da Computação",
+			duration: "Fev 2017 - Dez 2022",
+			logo: "https://www.quixada.ufc.br/wp-content/uploads/2017/10/logo.png",
+		},
+		{
+			institution: "EEEP Capelão Frei Orlando",
+			title: "Técnico em Informática",
+			duration: "Jan 2014 - Dez 2016",
+			logo: "https://tse3.mm.bing.net/th/id/OIP.jh1jrJNAo76vYpVTTU3vhwHaIz?rs=1&pid=ImgDetMain&o=7&rm=3",
 		},
 	],
 	works: [

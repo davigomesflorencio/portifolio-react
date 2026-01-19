@@ -36,7 +36,7 @@ const About = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col h-full m-0 pt-[120px] max-sm:pt-[60px]">
+					<div className="flex flex-col h-full m-0 pt-[120px] max-sm:pt-[60px] ">
 						<div className="flex flex-col lg:flex-row">
 							<div className="lg:basis-[900px] lg:order-2">
 								<div className="title !w-full">
@@ -44,20 +44,20 @@ const About = () => {
 								</div>
 
 								<div className="subtitle !w-[80%] max-lg:pt-5">
-								
-								Desenvolvedor Pleno com foco em Android e tecnologias móveis, especializado em Kotlin, Java e Flutter. 
-								
-								<br/><br/>
-								Tenho experiência sólida no desenvolvimento de aplicações nativas para Android e wearables, utilizando Jetpack Compose, MVVM, Retrofit e Samsung Health SDK, além de implementar práticas de CI/CD, monitoramento e análise de dados para garantir alta qualidade e performance. 
-								
-								<br/><br/>
-								Complemento minha atuação no mobile com desenvolvimento Back-End em Spring Boot (Java) e Python (FastAPI/Flask), criando APIs RESTful escaláveis e microsserviços com Docker e Kubernetes. 
-								
-								<br/><br/>Possuo conhecimentos em análise de dados com Python, processamento de sinais fisiológicos com NeuroKit e aplicação de Teoria dos Grafos em soluções de conectividade e otimização.
+
+									Desenvolvedor Pleno com foco em Android e tecnologias móveis, especializado em Kotlin, Java e Flutter.
+
+									<br /><br />
+									Tenho experiência sólida no desenvolvimento de aplicações nativas para Android e wearables, utilizando Jetpack Compose, MVVM, Retrofit e Samsung Health SDK, além de implementar práticas de CI/CD, monitoramento e análise de dados para garantir alta qualidade e performance.
+
+									<br /><br />
+									Complemento minha atuação no mobile com desenvolvimento Back-End em Spring Boot (Java) e Python (FastAPI/Flask), criando APIs RESTful escaláveis e microsserviços com Docker e Kubernetes.
+
+									<br /><br />Possuo conhecimentos em análise de dados com Python, processamento de sinais fisiológicos com NeuroKit e aplicação de Teoria dos Grafos em soluções de conectividade e otimização.
 								</div>
 							</div>
 
-							<div className="flex flex-col lg:basis-[300px] lg:order-1">
+							<div className="flex flex-col lg:basis-[300px] lg:order-1 mr-9 mb-9">
 								<div className="w-[370px] max-sm:w-[80%] pb-10 lg:pb-0">
 									<div className="inline-block overflow-hidden w-full rounded-[10%] rotate-3">
 										<img

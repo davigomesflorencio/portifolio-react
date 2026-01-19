@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faTwitter,
 	faGithub,
-	faStackOverflow,
 	faInstagram,
+	faStackOverflow
 } from "@fortawesome/free-brands-svg-icons";
+import { faDownload, faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
+import Logo from "../components/common/logo";
 import NavBar from "../components/common/navBar";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 
-import INFO from "../data/user";
-import SEO from "../data/seo";
+import Academic from "../components/homepage/academic";
 import Tecnology from "../components/homepage/tecnnology";
+import SEO from "../data/seo";
+import INFO from "../data/user";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -95,6 +95,19 @@ const Homepage = () => {
 								<div className="subtitle !w-[100%] lg:!w-[85%] mt-[10px] lg:mt-[25px]">
 									{INFO.homepage.description}
 								</div>
+
+								<a
+									href={INFO.main.cv}
+									target="_blank"
+									rel="noreferrer"
+									className="inline-flex items-center px-6 py-3 mt-8 text-sm font-medium text-white bg-primary rounded-lg hover:bg-secondary transition-all duration-300 shadow-lg"
+								>
+									<FontAwesomeIcon
+										icon={faDownload}
+										className="mr-2"
+									/>
+									Download CV
+								</a>
 							</div>
 
 							<div className="flex items-center w-full lg:w-auto order-1 lg:order-2">
@@ -111,16 +124,7 @@ const Homepage = () => {
 						</div>
 
 						<div className="flex justify-start items-center pt-[30px]">
-							<a
-								href={INFO.socials.twitter}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="pr-5 text-[25px] text-secondary hover:text-primary transition-colors duration-200"
-								/>
-							</a>
+
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -168,13 +172,20 @@ const Homepage = () => {
 						</div>
 
 						<div className="flex flex-col lg:flex-row">
-							<div className="basis-[900px] lg:basis-auto pt-[10px] ml-[30px]">
+							<div className="flex-1 ml-[30px]">
 								<Works />
 							</div>
 
-							<div className="basis-[900px] lg:basis-auto pt-[30px] ml-[30px]">
+							<div className="flex-1 ml-[30px]">
 								<Tecnology />
 							</div>
+						</div>
+
+						<div className="flex flex-col lg:flex-row">
+							<div className="flex-1 ml-[30px]">
+								<Academic />
+							</div>
+
 						</div>
 
 						<div className="page-footer">
