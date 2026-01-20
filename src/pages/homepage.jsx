@@ -4,13 +4,12 @@ import { Helmet } from "react-helmet";
 import {
 	faGithub,
 	faInstagram,
-	faStackOverflow
+	faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDownload, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
 import NavBar from "../components/common/navBar";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
@@ -79,13 +78,13 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
-					<div className="flex justify-start items-center pt-[130px]">
+					{/* <div className="flex justify-start items-center pt-[130px]">
 						<div style={logoStyle}>
 							<Logo width={logoSize} link={false} />
 						</div>
-					</div>
+					</div> */}
 
-					<div className="pt-[25px]">
+					<div className="pt-[205px]">
 						<div className="flex flex-col lg:flex-row justify-between items-center">
 							<div className="flex flex-col items-start lg:order-2">
 								<div className="title !w-[100%] lg:!w-[85%] mt-5 lg:mt-0">
@@ -124,7 +123,6 @@ const Homepage = () => {
 						</div>
 
 						<div className="flex justify-start items-center pt-[30px]">
-
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -185,7 +183,6 @@ const Homepage = () => {
 							<div className="flex-1 ml-[30px]">
 								<Academic />
 							</div>
-
 						</div>
 
 						<div className="page-footer">
